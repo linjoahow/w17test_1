@@ -1321,9 +1321,9 @@ def mygeartest3(self , M=10, P=20,N1=15, N2=24):
 &lt;form method=POST action=mygeartest3&gt;
 模數:&lt;input type=text name=M&gt;&lt;br /&gt;
 壓力角:&lt;input type=text name=P&gt;&lt;br /&gt;
-齒輪1齒數:&lt;select name"select_one&gt;
- &lt;option selected="true"&gt;15&lt;/option&gt;
- &lt;option&gt;16&lt;/option&gt;
+齒輪1齒數:&lt;select name=N1&gt;&lt;br /&gt;
+&lt;option&gt;15&lt;/option&gt;
+&lt;option&gt;16&lt;/option&gt;
 &lt;option&gt;17&lt;/option&gt;
 &lt;option&gt;18&lt;/option&gt;
 &lt;option&gt;19&lt;/option&gt;
@@ -1389,7 +1389,9 @@ def mygeartest3(self , M=10, P=20,N1=15, N2=24):
 &lt;option&gt;79&lt;/option&gt;
 &lt;option&gt;80&lt;/option&gt;
 &lt;/select&gt;
-齒輪2齒數:&lt;select name"select_one&gt;
+
+
+齒輪2齒數:&lt;select name=N2&gt;
 &lt;option&gt;15&lt;/option&gt;
 &lt;option&gt;16&lt;/option&gt;
 &lt;option&gt;17&lt;/option&gt;
@@ -1399,7 +1401,7 @@ def mygeartest3(self , M=10, P=20,N1=15, N2=24):
 &lt;option&gt;21&lt;/option&gt;
 &lt;option&gt;22&lt;/option&gt;
 &lt;option&gt;23&lt;/option&gt;
-&lt;option selected="true"&gt;24&lt;/option&gt;
+&lt;option&gt;24&lt;/option&gt;
 &lt;option&gt;25&lt;/option&gt;
 &lt;option&gt;26&lt;/option&gt;
 &lt;option&gt;27&lt;/option&gt;
@@ -1492,8 +1494,8 @@ rp_g1 = m*n_g1/2
 rp_g2 = m*n_g2/2
 
 # 繪圖第1齒輪的圓心座標
-x_g1 = 200
-y_g1 = 200
+x_g1 = 400
+y_g1 = 400
 # 第2齒輪的圓心座標, 假設排列成水平, 表示各齒輪圓心 y 座標相同
 x_g2 = x_g1 
 y_g2 = y_g1+ rp_g1 + rp_g2

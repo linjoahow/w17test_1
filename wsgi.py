@@ -697,9 +697,9 @@ class Hello(object):
     <form method=POST action=mygeartest3>
     模數:<input type=text name=M><br />
     壓力角:<input type=text name=P><br />
-    齒輪1齒數:<select name"select_one>
-     <option selected="true">15</option>
-     <option>16</option>
+    齒輪1齒數:<select name=N1><br />
+    <option>15</option>
+    <option>16</option>
     <option>17</option>
     <option>18</option>
     <option>19</option>
@@ -765,7 +765,9 @@ class Hello(object):
     <option>79</option>
     <option>80</option>
     </select>
-    齒輪2齒數:<select name"select_one>
+
+
+    齒輪2齒數:<select name=N2>
     <option>15</option>
     <option>16</option>
     <option>17</option>
@@ -775,7 +777,7 @@ class Hello(object):
     <option>21</option>
     <option>22</option>
     <option>23</option>
-    <option selected="true">24</option>
+    <option>24</option>
     <option>25</option>
     <option>26</option>
     <option>27</option>
@@ -868,8 +870,8 @@ class Hello(object):
     rp_g2 = m*n_g2/2
 
     # 繪圖第1齒輪的圓心座標
-    x_g1 = 200
-    y_g1 = 200
+    x_g1 = 400
+    y_g1 = 400
     # 第2齒輪的圓心座標, 假設排列成水平, 表示各齒輪圓心 y 座標相同
     x_g2 = x_g1 
     y_g2 = y_g1+ rp_g1 + rp_g2
